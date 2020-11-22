@@ -1,0 +1,16 @@
+{
+  "name": "display",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "i2c-bus": "^5.2.1",
+    "oled-font-5x7": "^1.0.3",
+    "oled-i2c-bus": "^1.0.11"
+  }
+}
