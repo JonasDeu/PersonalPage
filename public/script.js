@@ -12,6 +12,8 @@ function displayMsg() {
     })
   });
 
+  alert("Thanks for your message!")
+
   document.getElementById('displayMsgInput').value = '';
 
 }
