@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon src/index.js"
+    "start": "nodemon src/index.js",
+    "scss": "sass --watch assets/scss:public/css"
   },
   "author": "",
   "license": "ISC",
@@ -16,5 +17,6 @@
     "i2c-bus": "^5.2.1",
     "oled-font-5x7": "^1.0.3",
     "oled-i2c-bus": "^1.0.11"
-  }
+  },
+  "devDependencies": {}
 }

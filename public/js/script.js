@@ -1,4 +1,6 @@
-const url = "http://jonasdeuchler.me/display";
+const url = "https://jonasdeuchler.me/display";
+
+document.getElementById("sendButton").addEventListener("click", displayMsg);
 
 function displayMsg() {
   fetch(url, {
