@@ -7,7 +7,7 @@
 	--hex-border: calc(var(--hex-margin) / 1.73 /* sqrt(3) */);
 	--hex-transition: all 0.2s ease;
 
-	--color-hex-default: #fafafa00;
+	--color-hex-default: #ff000000;
 	--color-hex-active: #fffb0fbb;
 }
 
@@ -17,7 +17,7 @@
 	left: 0px;
 	z-index: -1;
 	display: grid;
-	grid-template-columns: repeat(6, var(--hex-width));
+	grid-template-columns: repeat(7, var(--hex-width));
 	grid-auto-rows: calc(var(--hex-width) - 28.87px / 2);
 	grid-gap: var(--hex-between) var(--hex-between);
 	padding-bottom: var(--hex-border);
@@ -56,9 +56,9 @@
 		bottom: 100%;
 	}
 
-	&:nth-child(n + 7):nth-child(-n + 12),
-	&:nth-child(n + 19):nth-child(-n + 24),
-	&:nth-child(n + 31):nth-child(-n + 36) {
+	&:nth-child(n + 8):nth-child(-n + 14),
+	&:nth-child(n + 22):nth-child(-n + 28),
+	&:nth-child(n + 36):nth-child(-n + 42) {
 		margin-left: calc(var(--hex-width) / 2 + var(--hex-between) / 2);
 	}
 }
