@@ -1,22 +1,22 @@
 {
-  "name": "PersonalPage",
-  "version": "1.0.0",
-  "description": "",
-  "main": "src/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon src/index.js",
-    "scss": "sass --watch assets/scss:public/css"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "helmet": "^4.2.0",
-    "i2c-bus": "^5.2.1",
-    "oled-font-5x7": "^1.0.3",
-    "oled-i2c-bus": "^1.0.11"
-  },
-  "devDependencies": {}
+	"name": "personalpage",
+	"version": "1.0.0",
+	"description": "",
+	"main": "src/index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "nodemon src/index.js",
+		"scss": "sass --watch assets/scss:public/css"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"cors": "^2.8.5",
+		"express": "^4.17.1",
+		"helmet": "^4.2.0",
+		"i2c-bus": "^5.2.1",
+		"oled-font-5x7": "^1.0.3",
+		"oled-i2c-bus": "^1.0.11"
+	},
+	"devDependencies": {}
 }
