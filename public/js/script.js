@@ -20,8 +20,13 @@ function displayMsg() {
 }
 
 function hexagonGenerator() {
-	const gridSize = 7
+	const hexagonContainer = document.getElementsByClassName('hexagon-container')[0]
 	const hexagons = Array.from(document.getElementsByClassName('hexagon'))
+
+	const gridSize = 7
+	const hexHeight = hexagonContainer.offsetHeight / gridSize
+	const hexWidth = hexagonContainer.offsetWidth / gridSize
+
 	hexagons.forEach((hex) => {
 		hex.classList.remove('activeHex')
 	})
@@ -90,9 +95,25 @@ function hexagonGenerator() {
 		}
 	}
 
-	nextHex(hexGrid, 3, 3, [], 5)
+	nextHex(hexGrid, 3, 3, [], 6)
+
+	hexagonContainer.style.left =
+		Math.floor(
+			Math.floor(Math.random() * (window.innerWidth - hexagonContainer.offsetWidth + 1)) /
+				hexWidth
+		) *
+			hexWidth +
+		'px'
+	hexagonContainer.style.top =
+		Math.floor(
+			Math.floor(Math.random() * (window.innerHeight - hexagonContainer.offsetHeight + 1)) /
+				(hexHeight * 2)
+		) *
+			(hexHeight * 2) +
+		'px'
 }
 
+hexagonGenerator()
 setInterval(() => {
 	hexagonGenerator()
 }, 1000)

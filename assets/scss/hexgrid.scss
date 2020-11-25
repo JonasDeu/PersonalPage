@@ -1,17 +1,18 @@
 :root {
 	--hex-width: 70px;
-	--hex-between: 11px;
+	--hex-between: 15px;
 
 	--hex-height: calc(var(--hex-width) / 1.73 /* sqrt(3) */);
 	--hex-margin: calc(var(--hex-width) / 2);
 	--hex-border: calc(var(--hex-margin) / 1.73 /* sqrt(3) */);
-	--hex-transition: all 0.2s ease;
+	--hex-transition: all 0s ease;
 
-	--color-hex-default: #ff000000;
+	--color-hex-default: #00000000;
 	--color-hex-active: #fffb0fbb;
 }
 
 .hexagon-container {
+	padding-right: var(--hex-border);
 	position: fixed;
 	top: 0px;
 	left: 0px;
@@ -32,6 +33,7 @@
 	margin: var(--hex-border) 0;
 	position: relative;
 	transition: var(--hex-transition);
+
 	width: var(--hex-width);
 
 	&::after,
