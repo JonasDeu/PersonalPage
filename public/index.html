@@ -1,8 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-GB">
 	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Jonas Deuchler</title>
+		<meta name="author" content="Jonas Deuchler" />
+		<meta name="description" content="Write me a message!" />
 		<link rel="stylesheet" href="css/styles.css" />
 		<link rel="stylesheet" href="css/hexgrid.css" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 	</head>
 
 	<body>
@@ -62,12 +68,14 @@
 		<p>Leave me a message below</p>
 
 		<form onsubmit="return false;">
-			<label>Message:</label>
-			<input id="displayMsgInput" type="text" name="msg" />
-			<button type="button" id="sendButton">Send</button>
+			<label>
+				Message:
+				<input id="displayMsgInput" type="text" name="msg" />
+			</label>
+			<button label="Send Message" type="button" id="sendButton">Send</button>
 		</form>
 
-		<canvas id="myCanvas" width="1200" height="600" style="border: 0px solid #000000"></canvas>
+		<canvas id="golCanvas" width="500" height="500" style="border: 0px solid #000000"></canvas>
 		<script src="js/HexagonGenerator.js"></script>
 		<script src="js/GoL.js"></script>
 		<script src="js/script.js"></script>

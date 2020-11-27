@@ -3,3 +3,11 @@ body {
 	font: 18px Arial, sans-serif;
 	margin: 10% 0 0 10%;
 }
+
+#golCanvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -2;
+	opacity: 0.5;
+}

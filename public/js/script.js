@@ -25,3 +25,18 @@ const hexGen = new HexagonGenerator(
 	document.getElementsByClassName('hexagon-container')[0],
 	document.getElementsByClassName('hexagon')
 )
+
+const cellSize = 12
+
+const gol = new GoL(
+	cellSize,
+	'#fffb0f',
+	0.3,
+	12,
+	Math.floor(window.innerWidth),
+	Math.floor(window.innerHeight),
+	1,
+	document.getElementById('golCanvas').getContext('2d')
+)
+
+gol.main()
