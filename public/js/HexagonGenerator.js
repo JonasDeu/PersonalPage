@@ -29,7 +29,7 @@ class HexagonGenerator {
 			hex.classList.remove('activeHex')
 		})
 
-		this.moveHexContainer()
+		//this.moveHexContainer()
 
 		this.nextHex(this.hexGrid, 3, 3, [], 6)
 	}

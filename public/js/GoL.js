@@ -114,11 +114,11 @@ class GoL {
 		//mirror edges
 		for (let l = 1; l < this.gridWidth - 1; l++) {
 			//vertical
-			this.mirrorGrid[l][0] = this.mirrorGrid[l][this.gridHeight - 3]
-			this.mirrorGrid[l][this.gridHeight - 2] = this.mirrorGrid[l][1]
+			this.mirrorGrid[l][0] = this.mirrorGrid[l][this.gridHeight - 2]
+			this.mirrorGrid[l][this.gridHeight - 1] = this.mirrorGrid[l][1]
 			//horizontal
-			this.mirrorGrid[0][l] = this.mirrorGrid[this.gridWidth - 3][l]
-			this.mirrorGrid[this.gridWidth - 2][l] = this.mirrorGrid[1][l]
+			this.mirrorGrid[0][l] = this.mirrorGrid[this.gridWidth - 2][l]
+			this.mirrorGrid[this.gridWidth - 1][l] = this.mirrorGrid[1][l]
 		}
 
 		let temp = this.theGrid

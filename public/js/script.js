@@ -20,23 +20,38 @@ function displayMsg() {
 }
 
 //HexagonGenerator
+/*
 const hexGen = new HexagonGenerator(
 	7,
 	document.getElementsByClassName('hexagon-container')[0],
 	document.getElementsByClassName('hexagon')
 )
+*/
 
-const cellSize = 12
+const cellSize = 7
 
-const gol = new GoL(
+const gol1 = new GoL(
 	cellSize,
-	'#fffb0f',
-	0.3,
-	12,
-	Math.floor(window.innerWidth),
-	Math.floor(window.innerHeight),
+	'#bbbbbf',
+	0.2,
+	8,
+	Math.floor(300),
+	Math.floor(80),
 	1,
-	document.getElementById('golCanvas').getContext('2d')
+	document.getElementById('golCanvas1').getContext('2d')
 )
 
-gol.main()
+gol1.main()
+
+const gol2 = new GoL(
+	cellSize,
+	'#bbbbbf',
+	0.2,
+	8,
+	Math.floor(300),
+	Math.floor(80),
+	1,
+	document.getElementById('golCanvas2').getContext('2d')
+)
+
+gol2.main()
