@@ -1,13 +1,25 @@
 body {
-	background-color: #fefeff;
-	font: 18px Arial, sans-serif;
-	margin: 10% 0 0 10%;
+	background-color: #fdffff;
+	font-family: 'Fira Mono', monospace;
+	color: #222;
+	font-size: 1em;
+	line-height: 1.5;
 }
 
-#golCanvas {
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: -2;
-	opacity: 0.5;
+#golCanvas1 {
+	border-right: 1px solid #222;
+	margin-top: 1em;
+}
+
+#golCanvas2 {
+	border-right: 1px solid #222;
+	margin-top: 1.5em;
+}
+
+main {
+	border-left: 1px solid #222;
+	width: 300px;
+	margin-left: 10%;
+	margin-top: 15%;
+	padding-left: 10px;
 }

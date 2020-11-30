@@ -15,7 +15,7 @@
 	padding-right: var(--hex-border);
 	position: fixed;
 	top: 0px;
-	left: 0px;
+	left: 50%;
 	z-index: -1;
 	display: grid;
 	grid-template-columns: repeat(7, var(--hex-width));

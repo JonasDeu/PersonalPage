@@ -6,13 +6,16 @@
 		<title>Jonas Deuchler</title>
 		<meta name="author" content="Jonas Deuchler" />
 		<meta name="description" content="Write me a message!" />
+		<link rel="stylesheet" href="css/normalize.css" />
 		<link rel="stylesheet" href="css/styles.css" />
 		<link rel="stylesheet" href="css/hexgrid.css" />
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet" />
 	</head>
 
 	<body>
-		<main class="hexagon-container">
+		<!--
+		<div class="hexagon-container">
 			<div class="hexagon"></div>
 			<div class="hexagon"></div>
 			<div class="hexagon"></div>
@@ -62,20 +65,28 @@
 			<div class="hexagon"></div>
 			<div class="hexagon"></div>
 			<div class="hexagon"></div>
+		</div>
+		-->
+
+		<main>
+			<canvas id="golCanvas1" width="10" height="10"></canvas>
+
+			<p>I'm <b>Jonas</b><br />Leave me a message below</p>
+
+			<form onsubmit="return false;" autocomplete="off" spellcheck="false">
+				<input
+					label="Message:"
+					id="displayMsgInput"
+					type="text"
+					name="msg"
+					maxlength="65"
+				/>
+				<button label="Send Message" type="button" id="sendButton">Send</button>
+			</form>
+
+			<canvas id="golCanvas2" width="10" height="10"></canvas>
 		</main>
 
-		<h1>Hi there!</h1>
-		<p>Leave me a message below</p>
-
-		<form onsubmit="return false;">
-			<label>
-				Message:
-				<input id="displayMsgInput" type="text" name="msg" />
-			</label>
-			<button label="Send Message" type="button" id="sendButton">Send</button>
-		</form>
-
-		<canvas id="golCanvas" width="500" height="500" style="border: 0px solid #000000"></canvas>
 		<script src="js/HexagonGenerator.js"></script>
 		<script src="js/GoL.js"></script>
 		<script src="js/script.js"></script>
